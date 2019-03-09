@@ -31,7 +31,7 @@ function deepestChild() {
 
 function depth(node) {
   console.log("depth(node): " + node)
-  if (node.hasChildNodes()) {
+  if (node.querySelector('div') != null) {
     var nn = node.querySelector('div')
     console.log("nn: " + nn)
     depth(nn);
