@@ -23,10 +23,8 @@ function increaseRankBy(n) {
 
 function deepestChild() {
   let aule = document.getElementById('grand-node');
-  let prev;
 
   while (aule.querySelector('div') != null) {
-    prev = aule;
     aule = aule.querySelector('div');
   }
 
