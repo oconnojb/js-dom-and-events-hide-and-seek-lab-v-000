@@ -37,6 +37,7 @@ function depth(node) {
     depth(nn);
   }
   else {
+    console.log('returning: ' + node)
     return node;
   }
 }
