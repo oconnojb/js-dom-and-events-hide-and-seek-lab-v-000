@@ -30,5 +30,5 @@ function deepestChild() {
     aule = aule.querySelector('div');
   }
 
-  return prev;
+  return aule;
 }
