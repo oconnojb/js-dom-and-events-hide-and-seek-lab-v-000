@@ -22,7 +22,7 @@ function increaseRankBy(n) {
 }
 
 function deepestChild() {
-  let aule = document.querySelector('#grand-node');
+  let aule = document.getElementById('#grand-node');
   let melko = depth(aule);
   return melko;
 }
