@@ -24,7 +24,7 @@ function increaseRankBy(n) {
 function deepestChild() {
   let aule = document.getElementById('grand-node');
   console.log("aule: " + aule)
-  let melko = function depth(node) {
+  function depth(node) {
     console.log("depth(node): " + node)
     if (node.querySelector('div') != null) {
       var nn = node.querySelector('div')
