@@ -35,5 +35,3 @@ function depth(node) {
     return node;
   }
 }
-
-
