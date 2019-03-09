@@ -23,19 +23,12 @@ function increaseRankBy(n) {
 
 function deepestChild() {
   let aule = document.getElementById('grand-node');
-  console.log("aule: " + aule)
-  let melko = function depth(node) {
-    console.log("depth(node): " + node)
-    if (node.querySelector('div') != null) {
-      var nn = node.querySelector('div')
-      console.log("nn: " + nn)
-      depth(nn);
-    }
-    else {
-      console.log('returning: ' + node)
-      return node;
-    }
-  };
-  console.log("melko: " + melko)
-  melko(aule);
+  let prev;
+
+  while (aule.querySelector('div') != null) {
+    prev = aule;
+    aule = aule.querySelector('div');
+  }
+
+  return prev;
 }
