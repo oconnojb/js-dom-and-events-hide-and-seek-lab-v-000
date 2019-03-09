@@ -23,16 +23,16 @@ function increaseRankBy(n) {
 
 function deepestChild() {
   let aule = document.getElementById('#grand-node');
-  conslole.log("aule: " + aule)
+  console.log("aule: " + aule)
   let melko = depth(aule);
-  conslole.log("melko: " + melko)
+  console.log("melko: " + melko)
   return melko;
 }
 
 function depth(node) {
-  conslole.log("depth(node): " + node)
+  console.log("depth(node): " + node)
   if (node.firstChild) {
-    conslole.log("node.firstChild: " + node.firstChild)
+    console.log("node.firstChild: " + node.firstChild)
     depth(node.firstChild);
   }
   else {
