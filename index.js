@@ -39,5 +39,3 @@ function deepestChild() {
   console.log("melko: " + melko)
   return melko;
 }
-
-
